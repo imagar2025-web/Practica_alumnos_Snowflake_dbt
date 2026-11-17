@@ -1,0 +1,22 @@
+version: 2
+models:
+  - name: stg_orders
+    description: 'Pedidos limpios procedentes de la seed'
+    columns:
+      - name: order_id
+        data_tests: [unique, not_null]
+      - name: status
+        data_tests: [not_null]
+  - name: stg_customers
+    columns:
+      - name: customer_id
+        data_tests: [unique, not_null]
+  - name: stg_products
+    columns:
+      - name: product_id
+        data_tests: [unique, not_null]
+  - name: fct_sales
+    description: 'Mart final: solamente ventas enviadas o entregadas'
+    columns:
+      - name: order_id
+        data_tests: [unique, not_null]

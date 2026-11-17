@@ -1,0 +1,14 @@
+# EJEMPLO PARA dbt Core. No contiene autenticación ni secretos.
+# En Snowflake Workspaces utiliza la conexión administrada por Snowflake.
+riders_puzzle_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      database: RIDERS_LAB_DB
+      schema: PUZZLE
+      warehouse: RIDERS_LAB_WH
+      role: ACCOUNTADMIN
+      threads: 4
+      # dbt Core requiere completar los campos de autenticación
+      # de forma segura, según el método elegido.

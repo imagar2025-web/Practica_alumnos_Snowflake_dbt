@@ -1,0 +1,11 @@
+# No subir artefactos locales, credenciales ni resultados
+/target/
+/logs/
+/dbt_packages/
+.env
+.env.*
+*.key
+*.pem
+*.duckdb
+__pycache__/
+.DS_Store

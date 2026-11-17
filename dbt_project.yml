@@ -1,0 +1,16 @@
+name: 'riders_puzzle_dbt'
+version: '1.0.0'
+config-version: 2
+profile: 'riders_puzzle_dbt'
+model-paths: ['models']
+seed-paths: ['seeds']
+test-paths: ['tests']
+
+models:
+  riders_puzzle_dbt:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: view
+    marts:
+      +materialized: table

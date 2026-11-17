@@ -1,0 +1,5 @@
+order_id,customer_id,product_id,quantity,status
+1001,1,101,2,DELIVERED
+1002,2,102,1,SHIPPED
+1003,1,102,3,DELIVERED
+1004,2,101,1,CANCELLED
