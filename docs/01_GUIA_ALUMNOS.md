@@ -11,7 +11,7 @@ No vas a escribir SQL desde cero. El proyecto contiene todas las piezas: **tres 
 1. Inicia sesión en **tu cuenta trial** y abre un **SQL Worksheet**.
 2. Abre [`setup/01_crear_entorno.sql`](../setup/01_crear_entorno.sql), copia su contenido y ejecútalo. Crea `RIDERS_LAB_WH` (X-Small con suspensión automática), `RIDERS_LAB_DB` y el esquema `PUZZLE`.
 3. Comprueba que el último `SELECT` devuelve esos nombres. Si `USE ROLE ACCOUNTADMIN` falla, utiliza un rol autorizado para crear bases de datos y warehouses; si tu trial está restringida, consulta al profesor.
-4. Descarga/clona este repositorio y ábrelo en un entorno dbt compatible con Snowflake. Si utilizas **Snowflake Workspaces**, comprueba que el proyecto y sus comandos `seed`, `run` y `build` estén disponibles; el modo de configurar la conexión puede variar respecto a dbt Core.
+4. Descarga/clona este repositorio y luego subelo añadiendolo al workspace de SnowFlake importandolo y ábrelo en un entorno dbt compatible con Snowflake. Si utilizas **Snowflake Workspaces**, comprueba que el proyecto y sus comandos `seed`, `run` y `build` estén disponibles; el modo de configurar la conexión puede variar respecto a dbt Core.
 5. Si utilizas **dbt Core**, configura `profiles.yml` local con `database: RIDERS_LAB_DB`, `schema: PUZZLE`, `warehouse: RIDERS_LAB_WH` y `role: ACCOUNTADMIN`, además de la autenticación Snowflake de tu equipo. **No publiques credenciales ni tokens.** En Workspaces utiliza la conexión/perfil administrado por Snowflake según tu interfaz.
 
 **Importante:** las cuentas trial son independientes. No hace falta que el profesor te conceda acceso a sus datos. GitHub solo distribuye los archivos; no necesitas hacer commits ni push para resolver el puzzle.
